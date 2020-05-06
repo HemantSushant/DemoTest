@@ -26,7 +26,8 @@ public class PersonalInfoPage extends BasePage{
         super(driver);
     }
 
-    public static void enterPersonalInformation(DataTable dataTable){
+    public static void
+    enterPersonalInformation(DataTable dataTable){
         List<Map<String,String>> personalInfo = dataTable.asMaps(String.class,String.class);
 
         if(personalInfo.get(0).get("Gender") == "Mr"){
