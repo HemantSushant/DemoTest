@@ -2,6 +2,7 @@ package autoapp.automation.stepDef;
 
 import autoapp.automation.pages.PersonalInfoPage;
 import autoapp.automation.pages.RegisterPage;
+import autoapp.automation.pages.ShoppingPage;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -12,7 +13,7 @@ public class RegisterStepDef {
 
     @Given("^Automation practice application is opened$")
     public void automation_practice_application_is_opened() throws Throwable {
-        RegisterPage.openApplicaiton();
+        RegisterPage.openApplication();
     }
 
     @When("^I click sign in$")
@@ -33,4 +34,11 @@ public class RegisterStepDef {
         PersonalInfoPage.enterPersonalInformation(dataTable);
         Thread.sleep(5000);
     }
+
+
+    @Then("^I should see an invalid email address error message$")
+    public void i_should_an_invalid_email_address_error_message() throws Throwable {
+        RegisterPage.isEmailErrorMsgAppear();
+    }
+
 }

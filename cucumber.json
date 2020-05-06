@@ -6,11 +6,11 @@
         "before": [
           {
             "result": {
-              "duration": 3511319258,
+              "duration": 1683520005,
               "status": "passed"
             },
             "match": {
-              "location": "hooks.setUp()"
+              "location": "Hooks.setUp()"
             }
           }
         ],
@@ -21,11 +21,11 @@
         "after": [
           {
             "result": {
-              "duration": 619211050,
+              "duration": 108779280,
               "status": "passed"
             },
             "match": {
-              "location": "hooks.tearDown()"
+              "location": "Hooks.tearDown()"
             }
           }
         ],
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8373813162,
+              "duration": 17306479326,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 4467083745,
+              "duration": 3653283572,
               "status": "passed"
             },
             "line": 5,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 5463358298,
+              "duration": 5215836355,
               "status": "passed"
             },
             "line": 6,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 9663785286,
+              "duration": 7889775692,
               "status": "passed"
             },
             "line": 7,
@@ -117,6 +117,92 @@
             "keyword": "Then "
           }
         ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 953028605,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Validate that invalid email address triggers an error msg",
+        "description": "",
+        "id": "registering-to-automation-practice;validate-that-invalid-email-address-triggers-an-error-msg",
+        "after": [
+          {
+            "result": {
+              "duration": 108240018,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13391860667,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Automation practice application is opened",
+            "match": {
+              "location": "RegisterStepDef.automation_practice_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3149852442,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click sign in",
+            "match": {
+              "location": "RegisterStepDef.i_click_sign_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5196327729,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I create account with emailid \"invalidtestautocom\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalidtestautocom",
+                  "offset": 31
+                }
+              ],
+              "location": "RegisterStepDef.i_create_account_with_emailid(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29029067,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see an invalid email address error message",
+            "match": {
+              "location": "RegisterStepDef.i_should_an_invalid_email_address_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
     "name": "Registering to automation practice",
@@ -124,5 +210,131 @@
     "id": "registering-to-automation-practice",
     "keyword": "Feature",
     "uri": "src/test/java/autoapp/automation/features/Register.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 901877335,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Validate that user can navigate to summer dresses via megamenu",
+        "description": "",
+        "id": "shopping-on-automation-practice;validate-that-user-can-navigate-to-summer-dresses-via-megamenu",
+        "after": [
+          {
+            "result": {
+              "duration": 106808885,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10658471888,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Automation practice application is opened",
+            "match": {
+              "location": "RegisterStepDef.automation_practice_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3658446090,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select summer dresses from the dresses megamenu",
+            "match": {
+              "location": "ShoppingStepDef.i_select_menu_item_from_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45790478,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see the summer dresses webpage",
+            "match": {
+              "location": "ShoppingStepDef.i_should_see_the_summer_dresses_webpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3372698315,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I select a dress",
+            "match": {
+              "location": "ShoppingStepDef.i_select_a_dress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165424528,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select blue colour",
+            "match": {
+              "location": "ShoppingStepDef.i_select_blue_colour()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 137516092,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I add to shopping cart",
+            "match": {
+              "location": "ShoppingStepDef.i_add_to_shopping_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1125169716,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the dress should appear in the Cart summary with same product name, colour and quantity",
+            "match": {
+              "location": "ShoppingStepDef.verify_cart_details()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Shopping on automation practice",
+    "description": "",
+    "id": "shopping-on-automation-practice",
+    "keyword": "Feature",
+    "uri": "src/test/java/autoapp/automation/features/Shopping.feature"
   }
 ]
